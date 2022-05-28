@@ -1,2 +1,8 @@
 # IDE
 /.idea/
+
+# Built-in themes
+/themes/base/**
+/themes/keycloak/**
+/themes/keycloak-preview/**
+/themes/README.txt
