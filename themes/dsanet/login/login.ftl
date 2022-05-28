@@ -2,7 +2,7 @@
 <@layout.registrationLayout>
     <main class="${properties.kcMainContentFormClass!}">
         <section class="${properties.kcContainerClass}">
-            <#if displayMessage && message?has_content && (message.type != 'warning' || !isAppInitiatedAction??)>
+            <#if (displayMessage)?? && (message?has_content) && (message.type != 'warning' || !isAppInitiatedAction??)>
                 <div class="alert alert-${message.type} ${properties.kcAlertContainerClass}">
                     <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
                 </div>

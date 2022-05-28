@@ -1,5 +1,5 @@
 <#-- If required, fix the following path. Our target is base/login/template.ftl. -->
-<#import "template.ftl">
+<#import "template.ftl" as baseTemplate>
 
 <#macro bsPageHeader>
 	<header class="header">
