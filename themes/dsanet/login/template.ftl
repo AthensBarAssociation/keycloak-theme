@@ -21,17 +21,8 @@
 	<footer>
 		<div class="${properties.kcContainerClass!}">
 			<div class="ds-logos d-flex align-items-center my-3">
-				<a href="https://apps.olomeleia.gr/" target="_blank" class="logo_o">
-					<img src="${url.resourcesPath}/img/logo.png" alt="Ολομέλεια Δικηγορικών Συλλόγων Ελλάδας">
-				</a>
-				<a href="https://apps.olomeleia.gr/" target="_blank">
-					<img src="${url.resourcesPath}/img/dsa_dikografo.png" alt="ΗΛΕΚΤΡΟΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ ΔΙΚΗΓΟΡΟΥ">
-				</a>
 				<a href="http://www.dsanet.gr/" target="_blank">
 					<img src="${url.resourcesPath}/img/ds_isokratis.png" alt="ΤΡΑΠΕΖΑ ΝΟΜΙΚΩΝ ΠΛΗΡΟΦΟΡΙΩΝ 'ΙΣΟΚΡΑΤΗΣ'">
-				</a>
-				<a href="http://www.dsalib.gr/" target="_blank">
-					<img src="${url.resourcesPath}/img/dsa_library.png" alt="ΗΛΕΚΤΡΟΝΙΚΗ ΒΙΒΛΙΟΘΗΚΗ Δ.Σ.Α.">
 				</a>
 				<a href="https://ktimatologio.gov.gr/Professionals/Account/LoginLawyer" target="_blank">
 					<img src="${url.resourcesPath}/img/kthma.png" alt="Ελληνικό Κτηματολόγιο">
