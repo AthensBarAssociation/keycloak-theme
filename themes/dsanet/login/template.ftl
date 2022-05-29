@@ -1,4 +1,3 @@
-<#-- If required, fix the following path. Our target is base/login/template.ftl. -->
 <#import "template.ftl" as baseTemplate>
 
 <#macro bsPageHeader>
@@ -46,7 +45,7 @@
 	</footer>
 </#macro>
 
-<#macro registrationLayout bodyClass="" displayInfo=false displayMessage=true displayWide=false>
+<#macro registrationLayout>
 	<!DOCTYPE html>
 	<html lang="${.lang}">
 		<head>
