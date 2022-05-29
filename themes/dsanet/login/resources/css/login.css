@@ -1540,13 +1540,13 @@ select:disabled {
     color: #504a10
 }
 
-.alert-danger {
+.alert-danger, .alert-error {
     color: #842029;
     background-color: #f8d7da;
     border-color: #f5c2c7
 }
 
-.alert-danger .alert-link {
+.alert-danger .alert-link, .alert-error .alert-link {
     color: #6a1a21
 }
 
