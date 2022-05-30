@@ -1916,6 +1916,11 @@ body > header {
     margin-bottom: .5em
 }
 
+.form-signin .form-check-label {
+    float: left;
+    color: #fff;
+}
+
 .form-signin figure {
     margin-top: 1rem
 }
