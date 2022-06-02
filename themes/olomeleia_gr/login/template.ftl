@@ -36,6 +36,22 @@
 	</footer>
 </#macro>
 
+<#macro bsLanguageSwitcher>
+    <div class="login-language">
+    	<div class="dropdown">
+    		<input type="checkbox" id="languageSelect">
+    		<label class="${properties.kcButtonClass!} btn-link dropdown-toggle" type="button" for="languageSelect">
+    		    ${msg("selectLanguage")}
+    		</label>
+    		<ul class="dropdown-menu" aria-labelledby="languageSelect">
+    		    <#list locale.supported as l>
+                    <li class="${properties.kcDropdownItemClass!}"><a href="${l.url}">${l.label}</a></li>
+                </#list>
+    		</ul>
+    	</div>
+    </div>
+</#macro>
+
 <#macro registrationLayout>
 	<!DOCTYPE html>
 	<html lang="${.lang}">
@@ -72,7 +88,14 @@
 		</head>
 		<body class="${properties.kcBodyClass!}">
 			<@bsPageHeader/>
-			<#nested>
+			<main class="${properties.kcMainContentFormClass!}">
+                <section class="${properties.kcContainerClass}">
+                    <#if realm.internationalizationEnabled && locale.supported?size gt 1>
+                        <@bsLanguageSwitcher/>
+                    </#if>
+			        <#nested>
+			    </section>
+			</main>
 			<@bsPageFooter/>
 		</body>
 	</html>

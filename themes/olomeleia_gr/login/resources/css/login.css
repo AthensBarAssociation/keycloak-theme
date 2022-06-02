@@ -1767,12 +1767,9 @@ body > header {
 .login-language {
     right: 0;
     padding: .5rem;
-    z-index: 11
-}
-
-.login-language .dropdown {
-    display: inline-block;
-    margin: 0
+    z-index: 11;
+    position: relative;
+    margin-top: -1em
 }
 
 @media (min-width: 576px) {
@@ -1785,16 +1782,72 @@ body > header {
     }
 }
 
-.login-language .form-select {
-    color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    background-color: transparent;
-    border: none;
-    width: auto
+.login-language .dropdown {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+    position: relative
 }
 
-.login-language .form-select option {
-    color: #333940
+.login-language .dropdown [type=checkbox] {
+    position: absolute;
+    visibility: hidden
+}
+
+.login-language .dropdown [type=checkbox]:checked ~ ul {
+    display: block
+}
+
+.login-language .dropdown [type=checkbox]:checked ~ label {
+    opacity: 1
+}
+
+.login-language .dropdown-toggle {
+    font-weight: 600;
+    text-decoration: none;
+    color: currentColor;
+    padding: .25rem .75rem;
+    opacity: .5
+}
+
+.login-language .dropdown-toggle ~ ul {
+    position: absolute;
+    text-align: center;
+    display: none;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background: rgba(30, 36, 53, .25);
+    box-shadow: 0 1em .5em rgba(9, 26, 24, .25)
+}
+
+.login-language .dropdown-toggle ~ ul li {
+    margin: 0;
+    padding: 0;
+    background-color: #fff
+}
+
+.login-language .dropdown-toggle ~ ul a {
+    color: #333940;
+    margin: 0;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: .75em;
+    opacity: .75
+}
+
+.login-language .dropdown-toggle ~ ul a.active {
+    background: rgba(27, 77, 73, .25);
+    opacity: .9
+}
+
+.login-language .dropdown-toggle ~ ul a:hover {
+    opacity: 1
+}
+
+.login-language .dropdown-toggle:active, .login-language .dropdown-toggle:focus, .login-language .dropdown-toggle:hover, .login-language .dropdown-toggle:target {
+    opacity: .75
 }
 
 .form-after, .form-signin {
