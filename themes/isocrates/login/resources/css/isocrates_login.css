@@ -1,0 +1,13 @@
+.login_isokratis, .login_isokratis > header {
+    background-color: #19477b;
+}
+.login_isokratis .form-after .container {
+    background-color: #1d5391;
+    border-color: #1d5391;
+}
+.login_isokratis .form-signin [type=submit] {
+    background-color: #2977d1;
+}
+.login_isokratis .form-signin [type=submit]:focus, .login_isokratis .form-signin [type=submit]:hover {
+    background-color: #3b84d8;
+}
