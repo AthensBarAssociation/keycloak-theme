@@ -34,10 +34,6 @@
             </#if>
             <input type="submit" tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcGlobalBlockClass!}"
                    name="login" value="${msg("doLogIn")}" />
-            <a class="${properties.kcGlobalBlockClass!} ${properties.kcButtonClass!} btn-link text-center" tabindex="5"
-               href="https://apps.olomeleia.gr/index.php/reset_password/rp" target="_blank" rel="noreferrer">
-                ${msg("doForgotPassword")}
-            </a>
         </form>
     </#if>
 </@layout.registrationLayout>
