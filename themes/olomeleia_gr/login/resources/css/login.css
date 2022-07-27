@@ -609,7 +609,7 @@ select:disabled {
     color: #fff;
     background-color: #2d8079;
     border-color: #2d8079;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-primary:hover {
@@ -645,7 +645,7 @@ select:disabled {
     color: #fff;
     background-color: #5c6773;
     border-color: #5c6773;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-secondary:hover {
@@ -681,7 +681,7 @@ select:disabled {
     color: #1e2435;
     background-color: #29cc36;
     border-color: #29cc36;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-success:hover {
@@ -717,7 +717,7 @@ select:disabled {
     color: #1e2435;
     background-color: #29b0cb;
     border-color: #29b0cb;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-info:hover {
@@ -753,7 +753,7 @@ select:disabled {
     color: #1e2435;
     background-color: #a69b21;
     border-color: #a69b21;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-warning:hover {
@@ -789,7 +789,7 @@ select:disabled {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-danger:hover {
@@ -825,7 +825,7 @@ select:disabled {
     color: #1e2435;
     background-color: #dee2e6;
     border-color: #dee2e6;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-light:hover {
@@ -861,7 +861,7 @@ select:disabled {
     color: #fff;
     background-color: #333940;
     border-color: #333940;
-    box-shadow: 0
+    box-shadow: none;
 }
 
 .btn-dark:hover {
@@ -1718,7 +1718,8 @@ footer {
 
 footer .copy {
     font-size: .75em;
-    letter-spacing: .05em
+    letter-spacing: .05em;
+    text-align: center;
 }
 
 @media (min-width: 576px) {

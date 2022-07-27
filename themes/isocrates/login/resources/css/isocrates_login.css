@@ -11,3 +11,27 @@
 .login_isokratis .form-signin [type=submit]:focus, .login_isokratis .form-signin [type=submit]:hover {
     background-color: #3b84d8;
 }
+
+.login_isokratis .logo .text {
+    display: flex;
+    align-items: center;
+    flex: 0 0 100%;
+}
+
+@media screen and (max-width:576px) {
+    .logo .text img.emblem {
+        width: 100%;
+        max-width: 4.5rem;
+        height: auto ;
+        margin: 0 .25rem 0 0;
+        padding: 0;
+        flex: 0 0 auto;
+    }
+
+    .logo .text .emblem + img {
+        max-width: 60vw;
+        height: 3.5rem;
+        width: 100%;
+        flex: 1;
+    }
+}
