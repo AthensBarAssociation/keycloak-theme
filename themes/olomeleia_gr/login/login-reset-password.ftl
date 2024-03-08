@@ -1,9 +1,14 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout>
     <h4>${msg("emailForgotTitle")}</h4>
+    <#if messagesPerField.existsError('username')>
+        <div class="alert alert-danger ${properties.kcAlertContainerClass!}" role="alert" aria-live="polite">
+            <span class="kc-feedback-text">${kcSanitize(messagesPerField.getFirstError('username'))?no_esc}</span>
+        </div>
+    </#if>
     <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">
         <div class="${properties.kcFormGroupClass!}">
-            <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus tabindex="1"
+            <input type="text" id="username" name="username" value="${(auth.attemptedUsername!'')}" class="${properties.kcInputClass!}" autofocus tabindex="1"
                    placeholder="
                         <#if !realm.loginWithEmailAllowed>
                             ${msg("username")}
@@ -29,5 +34,9 @@
             ${kcSanitize(msg("backToLogin"))?no_esc}
         </a>
     </form>
-    <p>${msg("emailInstruction")}</p>
+    <#if realm.duplicateEmailsAllowed>
+        ${msg("emailInstructionUsername")}
+    <#else>
+        ${msg("emailInstruction")}
+    </#if>
 </@layout.registrationLayout>

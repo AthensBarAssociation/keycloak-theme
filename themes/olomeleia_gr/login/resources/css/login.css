@@ -554,6 +554,21 @@ select:disabled {
     box-shadow: 0 0 0 .25rem rgba(220, 53, 69, .25)
 }
 
+.invalid-feedback {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.form-check-inline .form-check-input ~ .invalid-feedback {
+    margin-left: .5em;
+}
+
 .btn {
     display: inline-block;
     font-weight: 600;
