@@ -2,7 +2,6 @@
 <@layout.registrationLayout>
     <h4><#if messageHeader??>${messageHeader}<#else>${message.summary}</#if></h4>
     <p class="instruction">
-        ${message.summary}
         <#if requiredActions??>
             <#list requiredActions>: <b><#items as reqActionItem>${kcSanitize(msg("requiredAction.${reqActionItem}"))?no_esc}<#sep>, </#items></b></#list>
         <#else>
