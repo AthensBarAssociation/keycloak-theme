@@ -1,4 +1,9 @@
 <footer>
+    <div class="espa-logo">
+        <a href="#">
+            <img src="${url.resourcesPath}/img/ds_isokratis.png" alt="ΕΣΠΑ Logo">
+        </a>
+    </div>
     <div class="${properties.kcContainerClass!}">
         <div class="ds-logos d-flex align-items-center my-3">
             <a href="http://www.dsanet.gr/" target="_blank">
