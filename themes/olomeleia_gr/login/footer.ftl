@@ -1,7 +1,7 @@
 <footer>
     <div class="espa-logo">
         <a href="#">
-            <img src="${url.resourcesPath}/img/ds_isokratis.png" alt="ΕΣΠΑ Logo">
+            <img src="${url.resourcesPath}/img/espa.png" alt="ΕΣΠΑ Logo">
         </a>
     </div>
     <div class="${properties.kcContainerClass!}">
